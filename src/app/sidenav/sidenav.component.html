@@ -1,0 +1,5 @@
+<div class="sidenav"></div>
+
+<p>Current state: {{ (sidenavState$ | async) ? "Open" : "Closed" }}</p>
+<button type="button" (click)="handleOpenSidenav()">Open Sidenav</button>
+<button type="button" (click)="handleCloseSidenav()">Close Sidenav</button>
